@@ -125,3 +125,61 @@ int main()
     else if(a>=60)printf("C\n");
     else if(a<60)printf("F\n");
 }
+
+#week作業
+```C
+2-1
+#include<stdio.h>
+int main()
+{
+    int n1=10,n2=20,n3=30;
+    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
+
+    int *p=&n1;
+    *p=200;
+    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
+    return 0;
+}
+```
+```C
+2-2
+ #include<stdio.h>
+int main()
+{
+    int n1=10,n2=20,n3=30;
+    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
+
+    int *p=&n1;
+    *p=200;
+    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
+
+    int *p2=&n3;
+    *p2=300;
+    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
+
+    return 0;
+}  
+```
+```C
+2-3
+#include<stdio.h>
+int main()
+{
+    int n1=10,n2=20,n3=30;
+    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
+
+    int *p=&n1;
+    *p=200;
+    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
+
+    int *p2=&n3;
+    *p2=300;
+    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
+
+    p2=p;
+    *p2=400;
+    printf("n1:%d n2:%d n3:%d\n",n1,n2,n3);
+
+    return 0;
+}
+```
